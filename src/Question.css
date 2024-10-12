@@ -1,0 +1,42 @@
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question h2 {
+    margin-bottom: 20px;
+}
+
+.answer-button {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-button.correct {
+    background-color: #28a745; /* Green for correct answer */
+}
+
+.answer-button.incorrect {
+    background-color: #dc3545; /* Red for incorrect answer */
+}
+
+
+.answer-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
